@@ -1,7 +1,7 @@
 import time
 def order_food():
     print('----------Ordering Food Page----------')
-    time = input('What time you would like your taxi to arrive X:XX: ')
+    time = input('What time you would like your food to arrive X:XX: ')
     am_or_pm = input('AM or PM: ')
     try:
         distance = int(input('How many miles away is your destination: '))
@@ -15,7 +15,7 @@ def order_food():
             print('Food order canceled.')
     except:
         print('Invalid input...returning to main menu.')
-        print('Taxi order canceled.')
+        print('Food order canceled.')
 def review():
     print('----------Reviews Page----------')
     app_or_driver = input('Enter 1 to leave a review for the app or 2 to review your delivery person: ')
@@ -91,6 +91,6 @@ except:
     print('Please enter a valid age...closing chatbot')
     quit()
 if age < 13:
-    print('You need to be at least 13 to use the taxi chatbot\nEnding conversation...')
+    print('You need to be at least 13 to use the food chatbot\nEnding conversation...')
 else:
     chatbot(choice)
